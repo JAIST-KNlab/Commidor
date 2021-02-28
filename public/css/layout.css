@@ -1,0 +1,245 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    position: static;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+}
+
+button{
+    font-size:12px;
+}
+
+#wrapper {
+    width: 600px;
+}
+#loginForm{
+    color:white;
+}
+#username,#laaaoginRoom {
+    background-color: white;
+    border: solid 1px white;
+    color:black;
+}
+
+
+/*スペース*/
+
+#userNodeSpace{/*一番上の層　オブジェクトが生成されるスペース*/
+    position: fixed;
+    background-color: rgb(142, 212, 224);
+    top:0%;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+  
+}
+
+#myVideoSpace{/*真ん中の層　自分の映像が貼り付けられているスペース*/
+    position: fixed;
+    background-color:rgb(247, 214, 142);
+    top: 50%;
+    height: 25%;
+    width: 100%;
+    margin: 0;
+}
+
+#otherVideoSpace{/*一番下の層　通信相手の映像が貼り付けられているスペース*/
+    position: fixed;
+    background-color:rgb(236, 155, 130);
+    top: 75%;
+    height: 25%;
+    width: 100%;
+    margin: 0;
+}
+
+#exit{/*出口の設定*/
+    position: absolute;
+    background-color: #99d88c;
+    top: 0%;
+    right:0%;
+    height: 100%;
+    width:30px;
+    margin: left;
+    z-index: 2;
+    
+}
+
+#roomID{/*ルーム名の表示*/
+    position:absolute;
+    color:black;
+    top:0%;
+    text-align: right;
+    z-index: 3;
+}
+
+
+
+
+
+/*追加される要素*/
+
+#myNode{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-color :rgb(255, 249, 168);    
+    border-radius: 50%;
+    text-align:center;
+    line-height: 50px;
+    color:black;
+    z-index: 3;
+}
+.rangeNode{
+    position:absolute;
+    width: 180px;
+    height: 180px;
+    margin: 0;
+    background-color :rgb(8, 250, 101);    
+    border-radius: 50%;
+    text-align:center;
+    line-height: 50px;
+    color:black;
+    z-index: 1;
+}
+.otherNode{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-color :rgb(240, 118, 87);    
+    border-radius: 50%;
+    text-align:center;
+    line-height: 50px;
+    color:blue;
+    z-index: 2;
+}
+
+
+#myVideo{
+    top: 0%;
+    height: 100%;
+    width: 15%;
+    
+    background-color: rgb(202, 139, 199);
+}
+#muteSwitching{
+    position: absolute;
+
+    font-size:5em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #FFF;
+	
+    
+    left:20%;
+    top:5%;
+    height: 40px;
+    width: 150px;
+    
+
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    user-select: none;
+    background: #00b5ad;
+    border: 3px #00b5ad solid;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+    transition: 0.2s ease;
+}
+#muteSwitching:hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+#audioSelect {
+    position: absolute;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    left:50%;
+    top:0%;
+    height: 40px;
+    width: 150px;
+}
+#videoSelect {
+    position: absolute;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    left:50%;
+    top:50%;
+    height: 40px;
+    width: 150px;
+}
+.otherVideos{
+    /*width:240px;
+    height:180px;*/
+    top: 0%;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(105, 112, 119);
+    float: left;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+#left, #right {
+    min-height: 30%;
+}
+
+#left {
+    width: 30%;
+    float: left;
+    background-color: #99d88c;
+}
+
+#right {
+    width: 70%;
+    float: right;
+    background-color: #f5f788;
+    text-align: right;
+}
+
+#box-title {
+    border: solid 1px black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#box-content {
+    border: solid 1px black;
+    padding: 5px;
+    border-top: none;
+    text-align: center;
+}
+
+#list-message {
+    height: 200px;
+    background-color: #fcb3f0;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    resize: none;
+}
+
+#message {
+    width: 85%;
+}
+
+#send-message {
+    width: 13%;
+}

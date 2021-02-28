@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>-->
+    <script type="text/javascript" src="./js/chat_room.js"></script>
+    <!--<script type="text/javascript" src="./js/video.js"></script>-->
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div id="userNodeSpace">
+        <p><span id="roomID"></span></p>
+    </div>
+    <div id="myVideoSpace">
+        <video id="myVideo" autoplay></video>
+        <button id="muteSwitching">現在：マイクOFF</button>
+        <div id="audioSelect">
+            <label for="audioSource">マイク: </label><select id="audioSource"></select>
+        </div>
+        <div id="videoSelect">
+            <label for="videoSource">カメラ: </label><select id="videoSource"></select>
+        </div>
+    </div>
+    <div id="otherVideoSpace"></div>
+</body>
+
+</html>
