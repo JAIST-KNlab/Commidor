@@ -1,9 +1,13 @@
 # Commidor
 Auraの概念を取り入れたメディア空間  
-Commidor
+Commidorで使っている技術
  - プログラミング技術（JS）
  - Node.js
- - socket.io 
+ - socket.io
+ - Express
+ - CentOS
+>
+>
 ## ファイル構成
 Expressを基に作成  
 編集・確認するファイルは以下の6つ  
