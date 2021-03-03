@@ -7,15 +7,16 @@ Auraの概念を取り入れたメディア空間
  - socket.io
  - Express
  - CentOS
+ - p2p通信
 
 #### 2. ファイル構成
 Expressを基に作成  
 編集・確認するファイルは以下の6つ  
  - server.js : 基本的にはデータをSocketを使って中継する
  - views/home.ejs : 部屋名とユーザ名を打ち込むためのページ　loginボタンをクリックしたらchat_room.htmlに飛ぶ
- - public/chat_room.html : Commidorの
- - public/js/chat_room.js : 
- - public/js/main.js : home.ejsの
+ - public/chat_room.html : Commidorのメイン部分
+ - public/js/chat_room.js : chat_room.html内での動作
+ - public/js/main.js : home.ejs内での動作
  - public/css/layout.css : home.ejsとchat_room.htmlの書式設定
 
 #### 3. 環境構築
