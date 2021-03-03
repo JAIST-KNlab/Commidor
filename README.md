@@ -1,4 +1,9 @@
-# commidor
+# Commidor
+Auraの概念を取り入れたメディア空間  
+Commidor
+ - プログラミング技術（JS）
+ - Node.js
+ - socket.io 
 ## ファイル構成
 Expressを基に作成  
 編集・確認するファイルは以下の6つ  
