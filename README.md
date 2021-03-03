@@ -1,5 +1,5 @@
 # commidor
-Expressを基に作成しているため，編集・確認するファイルは以下の6つ  
+## Expressを基に作成しているため，編集・確認するファイルは以下の6つ  
  ・server.js  
  ・views/home.ejs  
  ・public/chat_room.heml  
