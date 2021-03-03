@@ -11,7 +11,7 @@ Auraの概念を取り入れたメディア空間
 #### 2. ファイル構成
 Expressを基に作成  
 編集・確認するファイルは以下の6つ  
- - server.js
+ - server.js : 基本的にはデータをSocketを使って中継している
  - views/home.ejs
  - public/chat_room.heml
  - public/js/chat_room.js
