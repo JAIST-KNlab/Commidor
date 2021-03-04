@@ -9,7 +9,7 @@ Auraの概念を取り入れたメディア空間
  - CentOS
  - p2p通信
 
-#### 2. ファイル構成
+## 2. ファイル構成
 Expressを基に作成  
 編集・確認するファイルは以下の6つ  
  **server.js** : 基本的にはデータをSocketを使って中継する  
@@ -19,7 +19,7 @@ Expressを基に作成
  **public/js/main.js** : home.ejs内での動作  
  **public/css/layout.css** : home.ejsとchat_room.htmlの書式設定  
 
-#### 3. 環境構築
+## 3. 環境構築
 CentOS7での動作を確認済み
 - node.jsのインストール
 - expressのインストール
