@@ -1,7 +1,7 @@
 # Commidor
 Auraの概念を取り入れたメディア空間  
 
-#### 1. Commidorで使っている技術・環境
+### 1. Commidorで使っている技術・環境
  - プログラミング技術（JS）
  - Node.js
  - socket.io
