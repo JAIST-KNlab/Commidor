@@ -27,7 +27,8 @@ CentOS7での動作を確認済み
 - さくらVPSを利用する場合はパケットも開放する必要がある
 
 ## 4.出力されるcsv
-- day_ConnectData.csv
-- day_coordinateData.csv
+n = 日にち
+- n_ConnectData.csv
+- n_coordinateData.csv
 
 
