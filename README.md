@@ -25,3 +25,9 @@ CentOS7での動作を確認済み
 - Expressのインストール
 - 使用するポートを開放する（初期設定では3000）
 - さくらVPSを利用する場合はパケットも開放する必要がある
+
+## 4.出力されるcsv
+- day_ConnectData.csv
+- day_coordinateData.csv
+
+
