@@ -28,8 +28,10 @@ CentOS7での動作を確認済み
 
 ## 4.出力されるcsv
 n = 日にち
-- n_ConnectData.csv : 誰が誰と通信が繋がっているのか
+- n_ConnectData.csv : 誰が誰と通信が繋がっているのか  
+
 <img src="https://user-images.githubusercontent.com/79554440/110875083-539a3180-8318-11eb-857b-a002c7048fec.png" width="250px">
-- n_coordinateData.csv : Commidor内に2人以上いる場合に各ユーザの座標を取得する
+
+- n_coordinateData.csv : Commidor内に2人以上いる場合に各ユーザの座標を取得する  
 
 
