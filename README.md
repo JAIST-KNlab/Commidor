@@ -27,16 +27,17 @@ CentOS7での動作を確認済み
 - さくらVPSを利用する場合はパケットも開放する必要がある
 
 ## 4.出力されるcsv
-n = 日にち
-- n_ConnectData.csv : 誰が誰と通信が繋がっているのか  
+n = 日付
+- **n_ConnectData.csv** : 誰が誰と通信が繋がっているのか  
 
 <img src="https://user-images.githubusercontent.com/79554440/110875083-539a3180-8318-11eb-857b-a002c7048fec.png" width="250px">
 
-- n_coordinateData.csv : Commidor内に2人以上いる場合に各ユーザの座標を取得する  
+- **n_coordinateData.csv** : Commidor内に2人以上いる場合に各ユーザの座標を取得する  
 
 <img src="https://user-images.githubusercontent.com/79554440/110881268-6a925100-8323-11eb-91fd-f13104203a54.png" width="250px">
 
 ## 5.P2P通信について
-**P2P(Peer-to-Peer)通信** : ブラウザとブラウザの間で直接通信する技術であるUDP/IPを使用している
-
+**P2P(Peer-to-Peer)通信** : ブラウザとブラウザの間で直接通信する技術であるUDP/IPを使用している  
+P2P通信を行うためには，相手のIPアドレスを含む**SDP**のやり取りをする必要がある  
+**SDP(Session Description Protocol)** : 各ブラウザの情報を示し，文字列で表現される  
 詳しくは　→　https://html5experts.jp/mganeko/5554/
