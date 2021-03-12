@@ -34,4 +34,6 @@ n = 日にち
 
 - n_coordinateData.csv : Commidor内に2人以上いる場合に各ユーザの座標を取得する  
 
+<img src="https://user-images.githubusercontent.com/79554440/110881268-6a925100-8323-11eb-91fd-f13104203a54.png" width="250px">
+
 
