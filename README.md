@@ -40,4 +40,4 @@ n = 日付
 **P2P(Peer-to-Peer)通信** : ブラウザとブラウザの間で直接通信する技術であるUDP/IPを使用している  
 P2P通信を行うためには，相手のIPアドレスを含む**SDP**のやり取りをする必要がある  
 **SDP(Session Description Protocol)** : 各ブラウザの情報を示し，文字列で表現される  
-詳しくは　→　https://html5experts.jp/mganeko/5554/
+詳しくは　→　https://html5experts.jp/mganeko/5181/
