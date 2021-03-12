@@ -37,4 +37,6 @@ n = 日にち
 <img src="https://user-images.githubusercontent.com/79554440/110881268-6a925100-8323-11eb-91fd-f13104203a54.png" width="250px">
 
 ## 5.P2P通信について
-https://html5experts.jp/mganeko/5554/
+**P2P(Peer-to-Peer)通信** : ブラウザとブラウザの間で直接通信する技術であるUDP/IPを使用している
+
+詳しくは　→　https://html5experts.jp/mganeko/5554/
