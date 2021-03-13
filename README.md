@@ -44,6 +44,7 @@ P2P通信を行うためには，各ブラウザのIPアドレスを含む**SDP*
 交換した**SDP**を基に各ブラウザがSDPを交換した後に**ICE**候補（ICE Candidate）を生成する  
 ↓  
 候補の中からネットワーク的に近い経路が選択され，通信が開始される  
+
 **SDP(Session Description Protocol)** : 各ブラウザの情報を示し，文字列で表現される  
 **ICE(Interactive Connectivity Establishment)** : ブラウザ間の可能な通信経路に関する情報
 
