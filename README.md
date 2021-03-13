@@ -38,8 +38,13 @@ n = 日付
 
 ## 5.P2P通信について
 ### **P2P(Peer-to-Peer)通信** 
-ブラウザとブラウザの間で直接通信する技術であるUDP/IPを使用している  
+ブラウザとブラウザの間で直接通信する技術であり，UDP/IPを使用している  
 P2P通信を行うためには，相手のIPアドレスを含む**SDP**のやり取りをする必要がある  
 ### **SDP(Session Description Protocol)**
 各ブラウザの情報を示し，文字列で表現される  
+交換した**SDP**を基に各ブラウザがSDPを交換した後に**ICE**を生成する
+### **ICE(Interactive Connectivity Establishment)**
+ブラウザ間の可能な通信経路に関する情報
+ブラウザ間の経路情報の候補を複数リストアップ
+
 詳しくは　→　https://html5experts.jp/mganeko/5181/
