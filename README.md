@@ -55,11 +55,10 @@ Commidorでは通信経路候補として3つ用意している
 - **TURNサーバー**による通信経路（ブラウザ間にFireWallがある場合）
 #### **STUNサーバー**
 ブラウザ間にNAT（wifiルーターなど）がある場合，自身のプライベートIPアドレスはわかるが，グローバルIPアドレスが分からないため，P2P通信ができないため，STUNサーバーを利用してグローバルIPアドレスを取得する  
-<img src="https://user-images.githubusercontent.com/79554440/111076678-a6e6cc80-8530-11eb-9fd8-4b583229ff7a.png" width="250px">
-
+<img src="https://user-images.githubusercontent.com/79554440/111076678-a6e6cc80-8530-11eb-9fd8-4b583229ff7a.png" width="250px">  
+**public/js/chat_room.js**のなかの`prepareNewConnection`関数の中に記述している`stun2.l.google.com:19302`がSTUNサーバーのURL（googleが無料公開しているサーバー）
 #### **TURNサーバー**
-P2P通信のようにブラウザ同士が直接通信を行うのではなく，TURNサーバーを介してストリームデータのやり取りを行う
-
-<img src="https://user-images.githubusercontent.com/79554440/111077294-6f2d5400-8533-11eb-8a01-c5be74a16221.png" width="250px">
-
+P2P通信のようにブラウザ同士が直接通信を行うのではなく，TURNサーバーを介してストリームデータのやり取りを行う  
+<img src="https://user-images.githubusercontent.com/79554440/111077294-6f2d5400-8533-11eb-8a01-c5be74a16221.png" width="250px">  
+**public/js/chat_room.js**のなかの`prepareNewConnection`関数の中に記述している`tk2-236-27619.vs.sakura.ne.jp:3478?transport=udp`と`tk2-236-27619.vs.sakura.ne.jp:3478?transport=tcp`がTURNサーバーのURL（西本研究室がレンタルしているさくらサーバー内で展開しているTURNサーバーのURL）  
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
