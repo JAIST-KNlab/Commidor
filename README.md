@@ -58,3 +58,5 @@ Commidorでは通信経路候補として3つ用意している
 <img src="https://user-images.githubusercontent.com/79554440/111076171-8e75b280-852e-11eb-8a73-8956007f51b9.png" width="250px">
 
 ### **TURNサーバー**
+
+TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/5554/
