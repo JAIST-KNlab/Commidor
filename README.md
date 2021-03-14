@@ -53,10 +53,10 @@ Commidorでは通信経路候補として3つ用意している
 - P2Pによる直接的な通信経路
 - NATをこえるために**STUNサーバー**を利用した通信経路
 - **TURNサーバー**による通信経路（ブラウザ間にFireWallがある場合）
-### **STUNサーバー**
+#### **STUNサーバー**
 ブラウザ間にNAT（wifiルーターなど）がある場合，自身のプライベートIPアドレスはわかるが，グローバルIPアドレスが分からないため，P2P通信ができないため，STUNサーバーを利用してグローバルIPアドレスを取得する  
 <img src="https://user-images.githubusercontent.com/79554440/111076678-a6e6cc80-8530-11eb-9fd8-4b583229ff7a.png" width="250px">
 
-### **TURNサーバー**
-
+#### **TURNサーバー**
+P2P通信のようにブラウザ同士が直接通信を行うのではなく，TURNサーバーを介してストリームデータのやり取りを行う
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
