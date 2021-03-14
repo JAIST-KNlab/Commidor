@@ -59,6 +59,6 @@ Commidorでは通信経路候補として3つ用意している
 
 #### **TURNサーバー**
 P2P通信のようにブラウザ同士が直接通信を行うのではなく，TURNサーバーを介してストリームデータのやり取りを行う
-<img src="https://user-images.githubusercontent.com/79554440/111076678-a6e6cc80-8530-11eb-9fd8-4b583229ff7a.png" width="250px">
+<img src="https://user-images.githubusercontent.com/79554440/111077294-6f2d5400-8533-11eb-8a01-c5be74a16221.png" width="250px">
 
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
