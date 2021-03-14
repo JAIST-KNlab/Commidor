@@ -60,5 +60,5 @@ Commidorでは通信経路候補として3つ用意している
 #### **TURNサーバー**
 P2P通信のようにブラウザ同士が直接通信を行うのではなく，TURNサーバーを介してストリームデータのやり取りを行う  
 <img src="https://user-images.githubusercontent.com/79554440/111077294-6f2d5400-8533-11eb-8a01-c5be74a16221.png" width="250px">  
-**public/js/chat_room.js**のなかの`prepareNewConnection`関数の中に記述している`tk2-236-27619.vs.sakura.ne.jp:3478?transport=udp`と`tk2-236-27619.vs.sakura.ne.jp:3478?transport=tcp`がTURNサーバーのURL（西本研究室がレンタルしているさくらサーバー内で展開しているTURNサーバーのURL）  
+**public/js/chat_room.js**のなかの`prepareNewConnection`関数の中に記述している`tk2-236-27619.vs.sakura.ne.jp:3478?transport=udp`と`tk2-236-27619.vs.sakura.ne.jp:3478?transport=tcp`がTURNサーバーのURL（西本研究室がレンタルしているさくらサーバー内で展開しているTURNサーバー）  
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
