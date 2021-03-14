@@ -47,11 +47,11 @@ P2P通信を行うためには，各ブラウザのIPアドレスを含む**SDP*
 
 **SDP(Session Description Protocol)** : 各ブラウザの情報を示し，文字列で表現される  
 **ICE(Interactive Connectivity Establishment)** : ブラウザ間の可能な通信経路に関する情報  
-
+詳しくは　→　https://html5experts.jp/mganeko/5181/
 ### **ICE候補**
 Commidorでは通信経路候補として3つ用意している  
 - P2Pによる直接的な通信経路
 - NATをこえるために**STUNサーバー**を利用した通信経路
 - **TURNサーバー**による通信経路（ブラウザ間にFireWallがある場合）
 
-詳しくは　→　https://html5experts.jp/mganeko/5181/
+
