@@ -8,6 +8,8 @@ Auraの概念を取り入れたメディア空間
  - Express
  - CentOS
  - p2p通信
+ - visual studio
+ - C#
 
 ## 2. ファイル構成
 Expressを基に作成  
