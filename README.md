@@ -64,5 +64,5 @@ P2P通信のようにブラウザ同士が直接通信を行うのではなく�
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
 
 ## 6.Commidorの遷移用アプリと操作検出アプリ
- **local/** : chat_room.html内での動作  
- **local/** : home.ejs内での動作  
+ **local/console_app_v1** : chat_room.html内での動作  
+ **local/windowsFormsApp1** : home.ejs内での動作  
