@@ -68,7 +68,7 @@ P2P通信のようにブラウザ同士が直接通信を行うのではなく�
 TURNサーバーとSTUNサーバーについては　→　https://html5experts.jp/mganeko/20618/
 
 ## 6.Commidorの遷移用アプリと操作検出アプリ
- **local/console_app_v1** : 操作検出用アプリ
- **local/windowsFormsApp1** : Chromiumで作成したブラウザでCommidorへアクセスするアプリ  
+ - **local/console_app_v1** : 操作検出用アプリ
+ - **local/windowsFormsApp1** : Chromiumで作成したブラウザでCommidorへアクセスするアプリ  
  ### **console_app_v1** 
  ### **windowsFormsApp1** 
