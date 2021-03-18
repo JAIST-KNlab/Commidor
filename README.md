@@ -10,6 +10,8 @@ Auraの概念を取り入れたメディア空間
  - p2p通信
  - visual studio
  - C#
+ - chromium
+ - CefSharp
 
 ## 2. ファイル構成
 Expressを基に作成  
@@ -68,3 +70,5 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
 ## 6.Commidorの遷移用アプリと操作検出アプリ
  **local/console_app_v1** : 操作検出用アプリ
  **local/windowsFormsApp1** : Chromiumで作成したブラウザでCommidorへアクセスするアプリ  
+ ### **console_app_v1** 
+ ### **windowsFormsApp1** 
