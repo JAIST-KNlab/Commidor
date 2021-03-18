@@ -1,0 +1,131 @@
+Program.csに記述するコード
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Diagnostics;
+using System.ComponentModel;
+using System.Text;
+using System.Runtime.InteropServices;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
+using System.IO;
+
+namespace console_app_v1
+{
+    internal struct LASTINPUTINFO
+    {
+        public uint cBsize;
+        public uint dwTime;
+    }
+    
+
+    class Program
+    {
+        
+
+        delegate bool Callback(int ctrlChar);
+        [DllImport("kernel32.dll")]
+        static extern bool SetConsoleCtrlHandler(
+            Callback handlerRoutine,
+            bool add);
+
+        [System.Runtime.InteropServices.DllImport("User32.dll")]
+        private static extern bool
+        GetLastInputInfo(ref LASTINPUTINFO plii);
+
+    
+        void DataWindow_Closing(object sender, CancelEventArgs e)
+        {
+            System.Threading.Thread.Sleep(10000);
+            e.Cancel = true;
+        }
+
+        static void Main(string[] args)
+        {
+
+            bool flg = false;
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("Start!");
+            
+            LASTINPUTINFO lastInPut = new LASTINPUTINFO();
+            lastInPut.cBsize = (uint)System.Runtime.InteropServices.Marshal.SizeOf(lastInPut);
+
+
+            uint operation_time = 0;
+            bool operation = false;
+            int time = 0;
+            DateTime startTime = DateTime.Now;
+            
+            while (!operation)
+            {
+                try
+                {
+                    if (!GetLastInputInfo(ref lastInPut))
+                    {
+                        throw new System.ComponentModel.Win32Exception(System.Runtime.InteropServices.Marshal.GetLastWin32Error());
+                    }
+                    if (operation_time == 0)
+                    {
+                        operation_time = lastInPut.dwTime;
+                    }
+                    if (operation_time != lastInPut.dwTime)
+                    {
+                        operation_time = lastInPut.dwTime;
+                        time = 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Expetion:{0}",ex.Message);
+                }
+
+
+                //Console.WriteLine(time);
+
+               
+
+
+                if(time == 5)//5秒間操作が行わなければ
+                {
+                    DateTime endTime = DateTime.Now;
+                    try
+                    {
+                        StreamWriter file = new StreamWriter(@"data\" + startTime.Day + "_workTime.csv", true, Encoding.UTF8);
+                        file.WriteLine(startTime.ToString("HH:mm:ss") + "," + endTime.ToString("HH:mm:ss")); ;
+                        file.Close();
+                    }
+                    catch { }
+                    Process p = new Process();
+                    p.StartInfo.FileName = "WindowsFormsApp1";//ブラウザを開くアプリを起動する
+                    p.Start();
+                    operation = true;
+                    
+                }
+
+
+                if (flg == false) {
+                    flg = SetConsoleCtrlHandler(HandlerFunc, true);
+                }
+                System.Threading.Thread.Sleep(1000);//一秒待つ
+                time++;
+            }
+            
+
+        }
+        static bool HandlerFunc(int dwCtrlTyp)
+        {   
+            DateTime endTime = DateTime.Now;
+            try
+            {
+                StreamWriter file = new StreamWriter(@"data\" + endTime.Day + "_workTime.csv", true, Encoding.UTF8);
+                file.WriteLine(endTime.ToString("HH:mm:ss"));
+                file.Close();
+            }
+            catch { }
+            
+            return false;
+        }
+    }
+
+}
