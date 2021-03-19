@@ -70,6 +70,7 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
 ## 6.Commidorの遷移用アプリと操作検出アプリ
  - **local/console_app_v1** : 操作検出用アプリ
  - **local/WindowsFormsApp1** : Chromiumで作成したブラウザでCommidorへアクセスするアプリ  
+ この二つのアプリは実験時に実験参加者のPC上で起動させるアプリのコードであり，visual studioで出力したデータを同じ階層のフォルダにまとめて置く必要がある
  ### **console_app_v1** 
  visual studioのコンソールアプリを基に作成  
  一定時間操作が検知されなければWindowsFormsApp1を起動し，コンソールアプリを閉じる
@@ -79,6 +80,7 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
  ### **WindowsFormsApp1** 
  visual studioのWindowsフォームアプリケーションを基に作成  
  **CefSharp**を利用し，**Chromium**ベースのブラウザでCommidorへ接続している  
+ ブラウザが閉じられたconsole_app_v1が起動する
  詳しくは → https://takumi-oda.com/blog/2019/12/09/post-1017/  
  <img src="https://user-images.githubusercontent.com/79554440/111718718-cae23f00-889d-11eb-85b1-5383e6f21e82.png" width="250px">  
 **CefShrp** : Chromiumをアプリケーションに組み込むためのフレームワーク  
