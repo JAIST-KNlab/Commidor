@@ -10,7 +10,7 @@ Auraの概念を取り入れたメディア空間
  - p2p通信
  - visual studio
  - C#
- - chromium
+ - Chromium
  - CefSharp
 
 ## 2. ファイル構成
@@ -78,7 +78,8 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
  
  ### **WindowsFormsApp1** 
  visual studioのWindowsフォームアプリケーションを基に作成  
- CefSharpを利用し，cromiumベースのブラウザでCommidorへ接続している
+ **CefSharp**を利用し，**Chromium**ベースのブラウザでCommidorへ接続している
  詳しくは → https://takumi-oda.com/blog/2019/12/09/post-1017/  
  <img src="https://user-images.githubusercontent.com/79554440/111718718-cae23f00-889d-11eb-85b1-5383e6f21e82.png" width="250px">  
-**ICE(Interactive Connectivity Establishment)** : ブラウザ間の可能な通信経路に関する情報  
+**CefShrp** : Chromiumをアプリケーションに組み込むためのフレームワーク  
+**Chromium** : オープンソースのウェブブラウザのプロジェクト
