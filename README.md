@@ -74,6 +74,6 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
  visual studioのコンソールアプリを基に作成  
  一定時間操作が検知されなければWindowsFormsApp1を起動し，コンソールアプリを閉じる
  
- <img src="https://user-images.githubusercontent.com/79554440/111716055-9324c880-8898-11eb-8fd1-bf087f8c8839.png" width="250px">  
+ <img src="https://user-images.githubusercontent.com/79554440/111717153-d849fa00-889a-11eb-8a2b-dbc3340779db.png" width="250px">  
  
  ### **WindowsFormsApp1** 
