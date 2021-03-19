@@ -81,3 +81,4 @@ TURNサーバーとSTUNサーバーについては　→　https://html5experts.
  CefSharpを利用し，cromiumベースのブラウザでCommidorへ接続している
  詳しくは → https://takumi-oda.com/blog/2019/12/09/post-1017/
  <img src="https://user-images.githubusercontent.com/79554440/111718718-cae23f00-889d-11eb-85b1-5383e6f21e82.png" width="250px">  
+**ICE(Interactive Connectivity Establishment)** : ブラウザ間の可能な通信経路に関する情報  
